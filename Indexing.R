@@ -12,3 +12,7 @@ west <- murders$region == "West"
 ind <- safe & west
 
 safe_and_west <- murders$state[ind]
+
+ind <- which(murders$state == "California")
+
+ind <- match(c("New York", "Florida", "Texas"), murders$state)
